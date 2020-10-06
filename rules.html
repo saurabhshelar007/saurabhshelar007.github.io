@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How to play the game?</h2>
+      <h5>Following rules will help you to grasp the rule set needed while playing the game.</h5>
+      <h6> By: Saurabh Shelar   On: OCT 4, 2020</h6>
+      <p><ul>
+        <li>The game has 2 players, playing in rounds.</li>
+        <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
+        </li>
+        <li>BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
+        </li>
+        <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+        </li>
+        <li>The first player to reach 100 points on GLOBAL score wins the game
+        </li>
+      </ul> </p>
+    </div>
+    
+</body>
+</html>
